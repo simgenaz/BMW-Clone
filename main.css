@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #3C5B6F;
+}
+html{
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar Section */
+#navbar{
+    color: #fff ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.75rem;
+    height: 100px;
+    border-radius: 3px;
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+#navbar ul li a:hover{
+    border-bottom: 4px solid #2666CF;
+    opacity: 0.9;
+}
+
+/* Video */
+
+#myVideo {
+    width: 100%;
+}
+
+#video #myBtn{
+    width: 100%;
+    background: #DFD0B8;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+/* Rezerve */
+
+#rezerve{
+    padding: 1rem;
+}
+#rezerve h6{
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+#rezerve h1{
+    font-size: 4.5rem;
+    font-weight: 200;
+}
+
+#rezerve .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+#rezerve .items .bul {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+#rezerve .items .bul img{
+    width: 500px;
+    align-items: center;
+}
+
+#rezerve .items .bul h3{
+    color: black;
+    font-weight: 400;
+
+}
+
+
+/* Modeller */
+
+#modeller {
+    padding: 1rem;
+    margin: 65px 200px 0;
+    width: auto;
+    
+}
+#modeller h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+#modeller h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#modeller  .modeller {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#modeller .modeller .model{
+    text-align: center;
+    padding: 1.5rem;
+    width: 350px;
+}
+
+
+
+.modeller .model .model-info .title{
+    margin-top: 0.50rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    text-align: left;
+}
+
+.modeller .model .model-info .description{
+    margin-bottom: 0.25rem;
+    opacity: 0.8;
+    font-weight: 700;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+
+.model-image img{
+    height: 175px;
+    margin: 0 auto;
+}
+.model-image img:hover{
+    transform: scale(1.1);
+}
+
+
+.modeller .model .model-image span{
+    padding: .2rem;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #4d4d4d;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+#modeller #model-menu{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 2.5rem;
+}
+#modeller #model-menu .model-menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+#modeller #model-menu .model-menu ul li button{
+    color: #524C42;
+    padding: 1rem;
+    font-weight: 700;
+    outline: 0;
+    border: 0;
+    background-color: #fff;
+}
+#modeller #model-menu .model-menu ul li button:hover{
+    border-bottom: 4px solid #2666CF;
+    opacity: 0.9;
+}
+
+.tabcontent {
+    -webkit-animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+@keyframes fadeEffect {
+   from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Kesfet */
+
+#kesfet #photo-1 img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+#kesfet #photo-1{
+    position: relative;
+    text-align: center;
+}
+#kesfet .text-info {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+#kesfet .text-info h2{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: #fff;
+}
+#kesfet #photo-2 img{
+    width: 100%;
+    object-fit: contain;
+}
+#kesfet #photo-2{
+    position: relative;
+    text-align: center;
+}
+
+
+/* Mobil Uygulama */
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    overflow: auto;
+  }
+  
+.flex-container > div {
+    color: black;
+    margin: 10px;
+    line-height: 3.5rem;
+}
+
+#mobil-uygulama .flex-container .picture img{
+    width: 800px;
+    height: auto;
+}
+
+#mobil-uygulama .flex-container .acıklama .title h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+#mobil-uygulama .flex-container .acıklama .text p{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+#mobil-uygulama .flex-container .acıklama .button button{
+    text-align: center;
+    border: 2px solid #fff;
+    background-color: rgba(255, 99, 71, 0);
+    
+}
+#mobil-uygulama .flex-container .acıklama .button button a span{
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+    letter-spacing: 0.2rem;
+}
+
+.container-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+#contact {
+    padding: 1rem;
+}
+#contact .contact-form .container .col ul li {
+    list-style: none;
+    text-decoration: none;
+}
+#contact .icons ul{
+    list-style-type: none ;
+    display: block;
+    margin-top: 1rem;
+    align-self: center;
+}
+
+#contact  .icons ul li a{
+    padding: 1rem;
+    font-size: 2rem;
+}
+#contact .icons ul li a:hover{
+    opacity: 0.8;
+}

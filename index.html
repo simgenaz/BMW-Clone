@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your BMW  </title>
+    <link rel="icon" href="https://pngimg.com/uploads/bmw_logo/bmw_logo_PNG19707.png" type="image/favicon" />
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Tablet -->
+    <link rel="stylesheet" media="(max-width:1600px)" href="comp.css">
+    <link rel="stylesheet" media="(max-width:1280px)" href="tablet.css">
+    <link rel="stylesheet" media="(max-width:768px)" href="tablet.css">
+    <link rel="stylesheet" media="(max-width:500px)" href="mobile.css">
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="">
+        <div class="container">
+            <nav id="navbar">
+                <img src="./images/BMW.svg.png" alt="" style="width: 100px;padding:1rem;">                
+                <ul>
+                    <li><a href="#modeller">Modeller</a></li>
+                    <li><a href="#hakkımızda">Servis ve Aksesuar</a></li>
+                    <li><a href="">BMW'ni Tasarla ve Bul</a></li>
+                    <li><a href="#hakkımızda">Hakkımızda</a></li>
+                    <li><a href="#iletişim">İletişim</a></li>
+                </ul>
+            </nav>           
+        </div>
+    </header>
+
+    <section id="video" >
+            <video autoplay muted loop id="myVideo">
+            <source src="./images/5951267-uhd_4096_2160_25fps.mp4" type="video/mp4">
+        </video>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+    </section>
+
+    <section id="modeller">
+        <h3 class="text-center heading-medium">BMW Modelleri </h3>
+        <div id="model-menu" >
+        <nav class="model-menu">
+             <ul id="myLinks">
+                <li><button class="tablinks active" onclick="openModel(event, 'BMW-İ')">BMW-İ</button></li>
+                <li><button class="tablinks" onclick="openModel(event, 'X')">X</button></li>
+                <li><button class="tablinks" onclick="openModel(event, 'M')">M</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '8')">8</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '7')">7</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '6')">6</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '5')">5</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '4')">4</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '3')">3</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '2')">2</button></li>
+                <li><button class="tablinks" onclick="openModel(event, '1')">1</button></li>
+                <li><button class="tablinks" onclick="openModel(event, 'Z4')">Z4</button></li>
+                <li></li>
+             </ul>
+        </nav>
+    </div> 
+<hr>
+        <br>
+        <div id="BMW-İ" class="tabcontent active">
+            <h2 class="heading-medium">BMW İ</h2>    
+            <div class="modeller">
+                <!-- Model -->
+                <div class="model">
+                            <div class="model-image">
+                                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpua8rQbhSIqppglBgbRGal384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSDUqoQh47wMvcYi9M%25bgMb3islBglUb6%25cRScH8Z4MbnMdoPEyJGy5BRbrQ%25r9YEUW8zWunUUqogqaGQQl3ilU%2540cRScHz8oMbnMdgHOyJGy5ieSrQ%25r9SQHW8zWun87qogqaGhqogqaDJKl3ilUCQIcRScH4%25fMbnMdJmSyJGy5QinrQ%25r985RW8zWuo86qogqa3s7l3ilURKdcRScH715MbnMdgC0yJGy5QJlrQ%25r98BYW8zWun9rqogqa3oyl3ilUj7mcRScH78gMbnMdezJyJGy5iRarQ%25r9SDGW8JYHltW7%25ZnjTW8JuzM8nq0z6Fboy6oEd82" alt="">
+                            </div>
+                                <div class="model-info">
+                                    <div class="title">
+                                        BMW İX
+                                    </div>
+                                    <div class="description">
+                                        TAMAMEN ELEKTRİKLİ
+                                    </div>
+                                </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                        <div class="model-image">
+                            <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpua8rQbhSIqppglBgERGal384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFoqoQh47wMvcYi9M%25CoMb3islBglUbuZcRScHzooMbnMdoi0yJGy53LmrQ%25r9RXjW8zWuER4qogqaFQ8l3ilUj80cRScH709MbnMd0A9yJGy5iuurQ%25r9SKFW8zWunC%25qogqaGJQl3ilU%25awcRScHzCgMbnMdgbayJGy5iJFrQ%25r9SXRW8zWuKbsqogqaDJNl3ilUCGpcRScHbeiMbnMdJgSyJGy5Qd3rQ%25r98QIW8zWuomjqogqa3sHl38F5MIlBgL%250Pl38Uir3%25cYiA7QRWARj93N" alt="">
+                        </div>
+                        <div class="model-info">
+                            <div class="title">
+                                BMW İX M60
+                            </div>
+                            <div class="description">
+                                TAMAMEN ELEKTRİKLİ
+                            </div>
+                        </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgERunl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGNqoQh47wMvcYi9StrfMb3islBglUQ75cRScH86oMbnMdoPayJGy5BubrQ%25r9YEaW8zWuESNqogqaFrTl3ilU%25docRScHzo7MbnMdgBEyJGy5iKnrQ%25r9S1JW8zWunAjqogqaGsel3ilU%25KBcRScHzZ8MbnMdei0yJGy5msbrQ%25r9sRcW8zWuKbhqogqaDnvl3ilUR4gcRScHb8UMbnMdJodyJGy5Q3grQ%25r98SGW8zWuo86qogqa3NQl3ilUUdgcRScHHQ9MbnMddQuyJGy559KrQ%25r90aRW8zWuBDbqogqaYUel3ilUE00cRScHFBsMbnMdjIdyJGy57kQrQ%25r9K1RW8zWuDAW8JYHltW7%25ZnjTW8JuzM8nq0z6Fboy6oEd82" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW i5
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgnRunl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uS3EqoQh47wMvcYi9StrfMb3islBglUjWDcRScHz01MbnMdoi0yJGy53ARrQ%25r9RXHW8zWubxGqogqaJhOl3ilUjdocRScH7QQMbnMd03RyJGy5Bg2rQ%25r9YpJW8zWuEfuqogqaGH8l3ilU%25JJcRScHzo9MbnMdg30yJGy5isErQ%25r9SKCW8zWunYEqogqaGJ8l3ilU%25a1cRScHzqjMbnMdg43yJGy5iJUrQ%25r9S1JW8zWunAjqogqaGsbl3ilU%25KmcRScHzDYMbnMdgPoyJGy5msbrQ%25r9sRmW8zWuKb5qogqaDnOl3ilUR4gcRScHb8UMbnMdJodyJGy5Q3grQ%25r98SGW8zWuonNqogqa3uzl3ilUR3AcRScHb6oMbnMdJCYyJGy5Q4urQ%25r993UW8zWuuRGqogqaaRdl3ilUUHecRScHHwsMbnMdjYYyJGy5765rQ%25r9K1RW8zWuDAQqogqaC25l38F5MIlBgL%250Pl38Uir3%25cYiA7QRWARj93N" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW i5 M60 xDrive
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgERKDl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uS3%25qoQh47wMvcYi9h%25EAMb3islBglUjWZcRScHz01MbnMd0BayJGy55HvrQ%25r9K1RW8zWuDAQqogqaC25l3ilUjG6cRScHHQgMbnMdmjkyJGy55ztrQ%25r99XHW8zWuu3Hqogqaakel3ilU%25QocRScHHdmMbnMdgC8yJGy5i4DrQ%25r9SXRW8zWubxVqogqaFk8l3ilUCQDcRScH4%25fMbnMdo13yJGy53LUrQ%25r9RXnW8zWunJEqogqaDJ9l3ilURQUcRScHFNHMbnMdgbEyJGy5QJNrQ%25r982bW8zWuomjqogqa3sHl3ilUR4gcRScHbUiMbnMdJozyJGy5QinrQ%25r9YaJW8zWuERRqogqaFQ8l3ilURQacRScHbz1MbnMdgmYyJGy5isDrQ%25r9SoDW8zWunYbqogqaGEFl3ilU%25WFcRScHzCoMbnMd0oiyJGy5idtrQ%25r9RnYW8zWuuRHqogqaFkal3ilU%25tjcRScHzDYMbnMdemRyJGy5iubrQ%25r9S3aW8zWunJHqogqaGo5l3ilUEdQcRoj9y6cYiXzBLcRoHSWRzMES208bq2b7uRI" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW i5 M60 xDrive Touring
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKR9Yl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSDJqoQh47wMvcYi9h%25rfMb3islBglUHdJcRScHJUgMbnMdo9syJGy53LUrQ%25r9RXnW8zWubxKqogqaJh0l3ilUQTrcRScH753MbnMd088yJGy5BRbrQ%25r9YbFW8zWuEFUqogqaFCbl3ilUj%25%25cRScH7%25UMbnMd0zOyJGy5BgQrQ%25r9SaaW8zWunRRqogqaGQdl3ilU%2580cRScHzo7MbnMdgBiyJGy5isErQ%25r9SKGW8zWun3CqogqaGRQl3ilU%25QocRScHzUiMbnMdgHsyJGy5idtrQ%25r9S5fW8zWunsGqogqaGo5l3ilU%25tocRScHzNBMbnMdgI8yJGy5i6urQ%25r9S1YW8zWunmRqogqaGsel3ilU%25KBcRScHzZ8MbnMdeoiyJGy5m3trQ%25r9sRmW8zWuKSoqogqa3Jal3ilUR%256cRScHbU8MbnMdJbtyJGy5Qq3rQ%25r98eFW8zWuomUqogqaabdl3ilUUJecRScHHeiMbnMddQuyJGy559orQ%25r99paW8zWuDAbqogqaC28l38F5MIlBgL%250Pl38Uir3%25cYiA7QRWARj93N" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW i7
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgBR9Dl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251u2Y2qoQh47wMvcYi9tuNVMb3islBglUbaacRScHz0uMbnMdQgayJGy53ARrQ%25r9RXHW8zWubxGqogqaJhDl3ilUQTrcRScH753MbnMd08KyJGy5BsorQ%25r9YSSW8zWuESkqogqaFk7l3ilU%25ddcRScHzQQMbnMdg3uyJGy5iRBrQ%25r9SKFW8zWunD%25qogqaGR4l3ilU%25b8cRScHz83MbnMdgHSyJGy5idKrQ%25r9S5NW8zWun9kqogqaGK%25l3ilU%25tocRScHzNBMbnMdgI8yJGy5i6urQ%25r9SeCW8zWunmRqogqaGsHl3ilU%25TQcRScH48CMbnMdeokyJGy5mgvrQ%25r98KGW8zWuob9qogqa3Jal3ilURQGcRScHbziMbnMdJHoyJGy5QdFrQ%25r98QIW8zWuotJqogqa3s7l3ilURKdcRScHHQ9MbnMddmSyJGy558arQ%25r99paW8zWuufEqogqaakel3ilUUv1cRScHHB5MbnMdj%253yJGy5765rQ%25r9KibW8zWuDSdqogqaCn%25l3ilU4G%25cRScHeN8MbnMdmIRyJGy5s6UrQ%25r9YpdW8zg6FNIRq46lhoqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW i7 M70 xDrive
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBguRJOl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFRqoQh47wMvcYi9SWRAMb3islBglUHdjcRScHJzuMbnMdo9syJGy53JmrQ%25r9RXHW8zWubxGqogqaJhal3ilUQT1cRScH753MbnMd03RyJGy5BYurQ%25r9Yi5W8zWuE9SqogqaGH7l3ilU%2585cRScHz09MbnMdgBoyJGy5isDrQ%25r9SBYW8zWunCbqogqaG47l3ilU%25egcRScHz8fMbnMdgAJyJGy5i63rQ%25r9S1JW8zWunmHqogqaGsel3ilU%25KBcRScHzZ8MbnMdeBSyJGy5m3SrQ%25r9sRmW8zWuKbtqogqaDn3l3ilURFjcRScHb8HMbnMdJgAyJGy5QJNrQ%25r98lRW8zWuomjqogqaabdl3ilUUJecRScHHeiMbnMddQuyJGy559KrQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW i4
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgERJOl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFtqoQh47wMvcYi9kQRAMb3islBglUHdjcRScHJzuMbnMdQgtyJGy53uKrQ%25r9RnYW8zWub8KqogqaJh5l3ilUQTzcRScH8ZHMbnMdoP2yJGy5BubrQ%25r9Y33W8zWuEJQqogqaFj5l3ilUj7NcRScH7UfMbnMd0VdyJGy5iuErQ%25r9SbUW8zWunJjqogqaGjdl3ilU%257QcRScHzesMbnMdgQsyJGy5i0BrQ%25r9SDFW8zWunyYqogqaGKQl3ilU%25vecRScHzwgMbnMdgIRyJGy5i6ErQ%25r9SeUW8zWunm4qogqaGs0l3ilU%25TQcRScH40iMbnMdeoiyJGy5m3erQ%25r9sR2W8zWuKSoqogqa3EFl3ilURQUcRScHbz1MbnMdJbtyJGy5Qq3rQ%25r98eFW8zWuuRHqogqaabJl3ilUUJecRScHHQgMbnMddmSyJGy558arQ%25r99uDW8zWuuf4qogqaYVDl38F5MIlBgL%250Pl38Uir3%25cYiA7QRWARj93N" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW i4 M50
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgnRnKl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251unRRqoQh47wMvcYi9kQwCMb3islBglUQ80cRScH86oMbnMdoPayJGy53LSrQ%25r9YaJW8zWuERRqogqaFk%25l3ilUjn8cRScHz53MbnMdg8YyJGy5iRErQ%25r9SbYW8zWunFHqogqaGjJl3ilU%254mcRScHzJ8MbnMdgQsyJGy5i03rQ%25r9SBYW8zWunCHqogqaG47l3ilU%25egcRScHz8fMbnMdgCuyJGy5i4DrQ%25r9SejW8zWunxbqogqaDjzl3ilUC4ocRScH48gMbnMdeo2yJGy5m3erQ%25r9sibW8zWuKSoqogqa3J%25l3ilURJ5cRScHbj7MbnMdJoHyJGy5Q3grQ%25r98SFW8zWuo8Vqogqa3s7l3ilURKjcRScHbpzMbnMdd8uyJGy55oKrQ%25r99oUW8zWuuaCqogqaGS3l3ilUbTrcRoj9y6cYiXzBLcRoHSWRzMES208bq2b7uRI" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW iX3
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRrvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGNqoQh47wMvcYi9StRAMb3islBglUbW1cRScH809MbnMdo13yJGy53LUrQ%25r9RX9W8zWuERjqogqaFQ8l3ilUj7dcRScH7GoMbnMdg9RyJGy5iRBrQ%25r9SEUW8zWunFbqogqaGUFl3ilU%25FQcRScHzC3MbnMdgbkyJGy5i6brQ%25r9SeCW8zWunxbqogqaD%25Fl3ilUC4ocRScH48gMbnMdeoLyJGy5mgprQ%25r98KGW8zWuob9qogqa3Jal3ilURQGcRScHbR2MbnMdd8uyJGy558arQ%25r99uDW8zWuu5hqogqaYHJl3ilUE4QcRScHFdsMbnMdjYYyJGy57EDrQ%25r9019W8zWuBwoqogqaCYTl3ilU4tQcRScHeNcRoj9y6cYiXzBLcRoHSWRzMES208bq2b7uRI" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW iX2
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgoR9al384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uRCRqoQh47wMvcYi9SDrfMb3islBglUHdJcRScHJaCMbnMdo9syJGy53LUrQ%25r9RXnW8zWubxuqogqaJhWl3ilUjdocRScH7QQMbnMd03RyJGy5B31rQ%25r9YpHW8zWunUQqogqaGQdl3ilU%2575cRScHz08MbnMdgmKyJGy5i9arQ%25r9SBRW8zWunC%25qogqaGJtl3ilU%253pcRScHzN3MbnMdgIYyJGy5i4orQ%25r9SeCW8zWunxbqogqaDjzl3ilUC4ocRScH48gMbnMdeo4yJGy5mgQrQ%25r983UW8zWuoa%25qogqa3Jal3ilUR%256cRScHbR2MbnMdJWoyJGy5Q4ErQ%25r993DW8zWuuaCqogqaa9Ol3ilUUDpcRScHeNmMb37ur1MESxgYXMb3dnqbgyFntBoJltJ0ab6" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW iX1
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="X" class="tabcontent">
+            <h2 class="heading-medium">BMW X</h2>
+            <div class="modeller">
+                <!-- Model -->
+                <div class="model">
+                            <div class="model-image">
+                                <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgbRGyl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSD5qoQh47wMvcYi9hGb1Mb3islBglUbaIcRScH86oMbnMdoISyJGy536UrQ%25r9RXHW8zWubxGqogqaJhOl3ilUjdocRScH7o3MbnMd03YyJGy5BgQrQ%25r9YpFW8zWunJHqogqaGQ7l3ilU%258jcRScHzgoMbnMdgmYyJGy5idtrQ%25r9SmbW8zWunsdqogqaGkQl3ilU%25tocRScHzNBMbnMdgI9yJGy5i4DrQ%25r9SejW8zWunxbqogqaD%25Fl3ilUCQzcRScH48CMbnMdeoLyJGy5mgQrQ%25r98nDW8zWuob9qogqa3Jal3ilURQGcRScHbz1MbnMdJgSyJGy5Qd3rQ%25r98QIW8zWuomjqogqa3sFl3ilUU0rcRoj9y6cYiXzBLcRoHSWRzMES208bq2b7uRI" alt="">
+                                <span>YENİ</span>
+                            </div>
+                                <div class="model-info">
+                                    <div class="title">
+                                        YENİ BMW XM
+                                    </div>
+                                    <div class="description">
+                                        PLUG-IN HYBRID
+                                    </div>
+                                </div>
+                 </div>                       
+                <!-- -->
+                <div class="model">
+                        <div class="model-image">
+                            <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgbR93l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFtqoQh47wMvcYi9hQCHMb3islBglUHdjcRScHJzuMbnMdQgHyJGy58g5rQ%25r9oi2W8zWu39kqogqaJCFl3ilUQ3CcRScH8NuMbnMdoPayJGy53LmrQ%25r9RXjW8zWubxMqogqaFH8l3ilUj8ocRScH7oBMbnMd030yJGy5BYurQ%25r9YRAW8zWuESoqogqaFSQl3ilUjv9cRScHz55MbnMdg8YyJGy5ioorQ%25r9S3YW8zWunJHqogqaGQFl3ilU%25z8cRScHzeBMbnMdgm8yJGy5i3brQ%25r9S5NW8zWunsJqogqaGK5l3ilU%256wcRScHzwmMbnMdgbOyJGy5iJQrQ%25r9S1aW8zWunAEqogqaGs5l3ilU%25KBcRScH4e3MbnMdeoiyJGy5m3trQ%25r9sRmW8zWuKSoqogqa3Jal3ilUR%256cRScHbU8MbnMdJbtyJGy5Qq3rQ%25r98eFW8zWuomEqogqaabdl3ilUUJecRScHHdQMbnMddYqyJGy57qErQbBUq2rjGTSFhrQb9%25cQSW7%25IER8MI8YHQA" alt="">
+                        </div>
+                        <div class="model-info">
+                            <div class="title">
+                                BMW X7
+                            </div>
+                            <div class="description">
+                                DİZEL
+                            </div>
+                        </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgER9vl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251u2D2qoQh47wMvcYi9t5rfMb3islBglUbv8cRScH86oMbnMdoPayJGy53LmrQ%25r9RXcW8zWuEJjqogqaFj5l3ilUjGRcRScH7wBMbnMd0ViyJGy5BOdrQ%25r9SaaW8zWunRjqogqaGbHl3ilU%2585cRScHzoBMbnMdg30yJGy5iSRrQ%25r9SKFW8zWunDRqogqaGu6l3ilU%25WFcRScHzCoMbnMdg4ayJGy5iOKrQ%25r9SQfW8zWun8oqogqaG2Hl3ilUCQDcRScH4%25fMbnMdJgSyJGy5Qd3rQ%25r98QIW8zWuomjqogqa3sFl3ilUUJ5cRScHHQmMbnMddQuyJGy559orQ%25r99pCW8zWuujMqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW X7 M60i
+                        </div>
+                        <div class="description">
+                            BENZİN
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgEYn3l384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251unRRqoQh47wMvcYi9SDrfMb3islBglUHdjcRScHJzuMbnMdQzdyJGy58LXrQ%25r9RbDW8zWubDEqogqaJ2ul3ilUQT9cRScH8ZAMbnMd09RyJGy5BRbrQ%25r9YEaW8zWuEiJqogqaFk%25l3ilU%25docRScHzQBMbnMdg3uyJGy5isDrQ%25r9SoRW8zWunYUqogqaG47l3ilU%25egcRScHzGbMbnMdgCuyJGy5i4FrQ%25r9sRnW8zWuKbMqogqaDJNl3ilUCGUcRScH4%25VMbnMdJ70yJGy5Qi2rQ%25r98QxW8zWuocbqogqa3s7l3ilUUJ5cRScHHQmMbnMddQuyJGy559KrQ%25r99FFW8zWuBcjqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW X3
+                        </div>
+                        <div class="description">
+                            BENZİN - DİZEL
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRrvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uS3EqoQh47wMvcYi9SKG1Mb3islBglUbQqcRScHJzuMbnMdQgHyJGy58g5rQ%25r9oMNW8zWubRQqogqaJ2ul3ilUQT9cRScH8ZgMbnMdoPdyJGy53LMrQ%25r9Y3FW8zWuERRqogqaFQ8l3ilUj7dcRScH7%25bMbnMd0%253yJGy5BOSrQ%25r9SaJW8zWunJHqogqaGQFl3ilU%2575cRScHz08MbnMdgmKyJGy5i9arQ%25r9SBRW8zWunC%25qogqaGJtl3ilU%253pcRScH40iMbnMdei0yJGy5msbrQ%25r9sRnW8zWuKbMqogqaDn3l3ilURJ5cRScHbdiMbnMdJodyJGy5QJNrQ%25r98lRW8zWuomjqogqaabdl3ilUUb5cRScHHdmMbnMddUkyJGy573mrQ%25r90giW8zWuBNGqogqaY77l3ilUE0mcRScHFNHMbnMdmsYyJGy5s63rQ%25r9K1JW8zWuAUW8JYHltW7%25ZnjTW8JuzM8nq0z6Fboy6oEd82" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW X2
+                        </div>
+                        <div class="description">
+                            BENZİN
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgBRrvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uS37qoQh47wMvcYi9StRAMb3islBglUbWRcRScHzC3MbnMdQocyJGy58iUrQ%25r9oi9W8zWubFHqogqaJ%25Fl3ilUQI8cRScH8NUMbnMdoPayJGy53L5rQ%25r9YaJW8zWuERjqogqaFQ8l3ilUjGRcRScH7GoMbnMd0V0yJGy5BO5rQ%25r9SaJW8zWunJHqogqaGjdl3ilU%257QcRScHzesMbnMdgsSyJGy5ic0rQ%25r9SQwW8zWuKDQqogqaDJ%25l3ilUCQDcRScH48PMbnMdez3yJGy5mgQrQ%25r983UW8zWuoD%25qogqa3Uzl3ilURQacRScHb8HMbnMdJozyJGy5QinrQ%25r98QIW8zWuomjqogqa3s7l3ilUUJQcRScHHeiMbnMddQuyJGy559KrQ%25r99pCW8zWuBjjqogqaY2al3ilU4tQcRScHeN3MbnMdmI3yJGy5s6UrQ%25r9YEHW8zWuu5VqoQEdcNq0zPG7ZqoQagyoGlBg1jJ3r13F5ot" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW X2 M35i xDrive 
+                        </div>
+                        <div class="description">
+                            BENZİN
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgER9ul384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSD5qoQh47wMvcYi9SDwaMb3islBglUHdjcRScHJ8lMbnMdQgayJGy58idrQ%25r9oi9W8zWu35SqogqaJQ4l3ilUQtacRScH8ZuMbnMdoPiyJGy5BubrQ%25r9Y33W8zWuEJQqogqaFjHl3ilUjvzcRScHz53MbnMdg3uyJGy5iYarQ%25r9SERW8zWunD4qogqaGUdl3ilU%25FQcRScHzmiMbnMdgHgyJGy5i22rQ%25r9SQwW8zWuKF%25qogqaDC8l3ilUCQzcRScH48CMbnMdezJyJGy5QoarQ%25r98uGW8zWuobuqogqa3GIl3ilUR3AcRScHbr8MbnMdJCYyJGy55oarQ%25r99oUW8zWuuaCqogqaa9Ol3ilUEQCcRScHeN8MbnMdmIRyJR0aWAyFnhiExyJR5GlJirjGNY3QcNQBUJ1" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW X1
+                        </div>
+                        <div class="description">
+                            BENZİN PLUG-IN HYBRID
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBg3R9al384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSDJqoQh47wMvcYi9SKG1Mb3islBg2UUupcRScHHafMbnNd0B9yJGy5BYurQ%2569YEHW8zWKEFdqogqaRJWl3ilUbG9cRScH809MbnMdoi0yJGy53ARrQ%25r9R15W8zWubxdqogqaJh%25l3ilUQTUcRScH753MbnMd03RyJGy5BO5rQ%25r9YpnW8zWunUQqogqaGb7l3ilU%258jcRScHz09MbnMdgBoyJGy5isRrQ%25r9SuYW8zWunC%25qogqaGrEl3ilU%253BcRScHzRfMbnMdei0yJGy5msbrQ%25r9sRnW8zWuKbsqogqaDJTl3ilUCGRcRScHbQ9MbnMdJmSyJGy5Q9nrQ%25r98R5W8zWuobuqogqa3Jnl3ilUR%25gcRScHbR2MbnMdJ13yJGy5Q4ErQ%25r99KGW8zWuu3HqogqaaU4l3ilUUvmcRScHFe8MbnMdj5KyJGy57zRrQ%25r90FCW8zWuBAuqogqaCQ4l3ilU4tQcRScHeN3MbnMdmI3yJGy5s6UrQ%25r9YpYW8zWuuRbqogqaR93l38F5MIlBgL%250Pl38Uir3%25cYiA7QRWARj93N" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW X1 M35i xDrive
+                        </div>
+                        <div class="description">
+                            BENZİN
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpua8rQbhSIqppglBgbRGal384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSDUqoQh47wMvcYi9M%25bgMb3islBglUb6%25cRScH8Z4MbnMdoPEyJGy5BRbrQ%25r9YEUW8zWunUUqogqaGQQl3ilU%2540cRScHz8oMbnMdgHOyJGy5ieSrQ%25r9SQHW8zWun87qogqaGhqogqaDJKl3ilUCQIcRScH4%25fMbnMdJmSyJGy5QinrQ%25r985RW8zWuo86qogqa3s7l3ilURKdcRScH715MbnMdgC0yJGy5QJlrQ%25r98BYW8zWun9rqogqa3oyl3ilUj7mcRScH78gMbnMdezJyJGy5iRarQ%25r9SDGW8JYHltW7%25ZnjTW8JuzM8nq0z6Fboy6oEd82" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW iX
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpua8rQbhSIqppglBgERGal384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSFoqoQh47wMvcYi9M%25CoMb3islBglUbuZcRScHzooMbnMdoi0yJGy53LmrQ%25r9RXjW8zWuER4qogqaFQ8l3ilUj80cRScH709MbnMd0A9yJGy5iuurQ%25r9SKFW8zWunC%25qogqaGJQl3ilU%25awcRScHzCgMbnMdgbayJGy5iJFrQ%25r9SXRW8zWuKbsqogqaDJNl3ilUCGpcRScHbeiMbnMdJgSyJGy5Qd3rQ%25r98QIW8zWuomjqogqa3sHl38F5MIlBgL%250Pl38Uir3%25cYiA7QRWARj93N" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW iX M60
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgnRnKl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251unRRqoQh47wMvcYi9kQwCMb3islBglUQ80cRScH86oMbnMdoPayJGy53LSrQ%25r9YaJW8zWuERRqogqaFk%25l3ilUjn8cRScHz53MbnMdg8YyJGy5iRErQ%25r9SbYW8zWunFHqogqaGjJl3ilU%254mcRScHzJ8MbnMdgQsyJGy5i03rQ%25r9SBYW8zWunCHqogqaG47l3ilU%25egcRScHz8fMbnMdgCuyJGy5i4DrQ%25r9SejW8zWunxbqogqaDjzl3ilUC4ocRScH48gMbnMdeo2yJGy5m3erQ%25r9sibW8zWuKSoqogqa3J%25l3ilURJ5cRScHbj7MbnMdJoHyJGy5Q3grQ%25r98SFW8zWuo8Vqogqa3s7l3ilURKjcRScHbpzMbnMdd8uyJGy55oKrQ%25r99oUW8zWuuaCqogqaGS3l3ilUbTrcRoj9y6cYiXzBLcRoHSWRzMES208bq2b7uRI" alt="">
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            BMW iX3
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgKRrvl384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uSGNqoQh47wMvcYi9StRAMb3islBglUbW1cRScH809MbnMdo13yJGy53LUrQ%25r9RX9W8zWuERjqogqaFQ8l3ilUj7dcRScH7GoMbnMdg9RyJGy5iRBrQ%25r9SEUW8zWunFbqogqaGUFl3ilU%25FQcRScHzC3MbnMdgbkyJGy5i6brQ%25r9SeCW8zWunxbqogqaD%25Fl3ilUC4ocRScH48gMbnMdeoLyJGy5mgprQ%25r98KGW8zWuob9qogqa3Jal3ilURQGcRScHbR2MbnMdd8uyJGy558arQ%25r99uDW8zWuu5hqogqaYHJl3ilUE4QcRScHFdsMbnMdjYYyJGy57EDrQ%25r9019W8zWuBwoqogqaCYTl3ilU4tQcRScHeNcRoj9y6cYiXzBLcRoHSWRzMES208bq2b7uRI" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW iX2
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="model">
+                    <div class="model-image">
+                        <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-2545xM4RIyFnbm9Mb3AgyyIJrjG0suyJRBODlsrjGpuaprQbhSIqppglBgoR9al384MlficYiGHqoQxYLW7%25f3tiJ0PCJirQbLDWcQW7%251uRCRqoQh47wMvcYi9SDrfMb3islBglUHdJcRScHJaCMbnMdo9syJGy53LUrQ%25r9RXnW8zWubxuqogqaJhWl3ilUjdocRScH7QQMbnMd03RyJGy5B31rQ%25r9YpHW8zWunUQqogqaGQdl3ilU%2575cRScHz08MbnMdgmKyJGy5i9arQ%25r9SBRW8zWunC%25qogqaGJtl3ilU%253pcRScHzN3MbnMdgIYyJGy5i4orQ%25r9SeCW8zWunxbqogqaDjzl3ilUC4ocRScH48gMbnMdeo4yJGy5mgQrQ%25r983UW8zWuoa%25qogqa3Jal3ilUR%256cRScHbR2MbnMdJWoyJGy5Q4ErQ%25r993DW8zWuuaCqogqaa9Ol3ilUUDpcRScHeNmMb37ur1MESxgYXMb3dnqbgyFntBoJltJ0ab6" alt="">
+                        <span>YENİ</span>
+                    </div>
+                    <div class="model-info">
+                        <div class="title">
+                            Yeni BMW iX1
+                        </div>
+                        <div class="description">
+                            TAMAMEN ELEKTRİKLİ
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section id="rezerve"  >
+        <h6 class="text-center heading-medium" >Sonraki adımlar</h6>
+        <h1 class="text-center heading-large">BMW'NİZİ REZERVE EDİN</h1>
+        <div class="items">
+            <div class="bul">
+                <img src="https://bmw.scene7.com/is/image/BMW/NxW_Home_ICON_STOCK_CAR?wid=1504&hei=542" alt="">
+                <h3>BMW'ni Bul'da Tasarlayın ve Rezerve Edin.</h3>
+                <button class="btn btn-light text-center">BMW'ni Bul'a gidin</button>
+            </div>
+            <div class="bul">
+                <img src="https://bmw.scene7.com/is/image/BMW/NxW_Home_ICON_RFO?wid=1504&hei=542" alt="">
+                <h3>Fiyat Listesi.</h3>
+                <button class="btn btn-light text-center">İnceleyin</button>
+            </div>
+            <div class="bul">
+                <img src="https://bmw.scene7.com/is/image/BMW/NxW_Home_ICON_CON?wid=1504&hei=542" alt="">
+                <h3>Ayın Özel Teklifleri.</h3>
+                <button class="btn btn-light text-center" >Keşfedin</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="kesfet">
+        <div id="photo-1">
+                <img src="https://bmw.scene7.com/is/image/BMW/bmw-3-serisi-main-banner?wid=3840&hei=2880" style="width: 3840; height: 2880;" alt="">
+            <div class="text-info">
+                <h2>BMW 3 Serisi Sedan</h2>
+                <button class="btn btn-onPicture" style="font-weight: 700;">Keşfedin ve Özel Teklifi Görün</button>
+            </div>
+            </div>
+            <br>
+        <div id="photo-2">
+            <img src="https://bmw.scene7.com/is/image/BMW/bmw-ix1-main-banner-mayis-2024:3to1?fmt=webp&wid=2560&hei=853" alt="">
+            <div class="text-info">
+                <h2>Yeni BMW iX1</h2>
+                <button class="btn btn-onPicture">Keşfedin ve Özel Teklifi Görün</button>
+            </div>
+            </div>
+
+    </section>
+
+    <section id="mobil-uygulama">
+        <div class="flex-container ">
+            <div class="picture" style="flex-grow: 4;">
+                <img src="https://bmw.scene7.com/is/image/BMW/header-desktop-v5:3to2?fmt=webp&wid=1504&hei=1003" alt="">
+            </div>
+            <div class="acıklama " style="flex-grow: 4;">
+                <div class="title">
+                    <h2>BMW DÜNYASI TEK UYGULAMADA</h2>
+                </div>
+                <div class="text">
+                    <p>BMW Türkiye mobil uygulamasını mobil 
+                    cihazlarınıza indirip hemen kullanmaya başlayabilirsiniz.</p>
+                </div>
+                <div class="button">
+                    <button>
+                        <a href="">
+                            <span>Keşfedin</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <br><br><br><br>
+    <hr>
+    <br>
+
+    <footer id="contact" >
+        <div class="contact-form">
+            <div class="container-2">
+                <div class="col">
+                    <p>İLETİŞİM & DESTEK</p>
+                    <ul>
+                        <li><a href="">BMW Canlı Destek</a></li>
+                        <li><a href="">BMW Acil Yol Yardım Hattı</a></li>
+                        <li><a href="">İletişim</a></li>
+                        <li><a href="">Geri Dönüşüm</a></li>
+                        <li><a href="">Gönüllü Geri Çağırma</a></li>
+                        <li><a href="">BMW E-Bülteni</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>HIZLI ERİŞİM</p>
+                    <ul>
+                        <li><a href="">Fiyat Listesi</a></li>
+                        <li><a href="">BMW Türkiye Mobil Uygulaması</a></li>
+                        <li><a href="">Test Sürüşü</a></li>
+                        <li><a href="">Kataloglar</a></li>
+                        <li><a href="">Site Haritası</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p>BMW DÜNYASI</p>
+                    <ul>
+                        <li><a href="">BMW Türkiye Mobil Uygulaması</a></li>
+                        <li><a href="">BMW'ni Bul'da Tasarlayın ve Rezerve Edin</a></li>
+                        <li><a href="">BMW Dilediğiniz Yerde</a></li>
+                        <li><a href="">BMW Lifestyle Shop</a></li>
+                        <li><a href="">İkinci El BMW modelleri Borusan Next'te</a></li>
+                        <li><a href="">BMW Motorrad Türkiye</a></li>
+                        <li><a href="">BOM Akademi</a></li>
+                        <li><a href="">Borusan Otomotiv</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="icons">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+    
+</div>
+
+    </footer>
+
+</body>
+<script>
+function openModel(evt, modelName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("active", "");
+  }
+  document.getElementById(modelName).style.display = "block";
+  evt.currentTarget.className += "active";
+}
+
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
+
+
+</script>
+</html>

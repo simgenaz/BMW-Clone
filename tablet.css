@@ -1,0 +1,59 @@
+#rezerve .items  {
+    flex-direction: column;
+    align-items: center;
+
+}
+#rezerve .items  .bul{
+    width: 100%;
+    
+}
+
+#myVideo{
+    width: 100%;
+}
+
+#modeller .modeller {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+#modeller{
+    margin: 0 0 0 0;
+}
+
+#kesfet #photo-1 {
+    width: 100%;
+}
+#kesfet #photo-2 {
+    width: 100%;
+}
+
+#kesfet #photo-2 img{
+    height: auto;
+}
+
+#kesfet #photo-1 img{
+    height: auto;
+}
+
+#kesfet .text-info h2{
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+}
+
+#kesfet .text-info button{
+    width: auto;
+    padding: 0.4rem 1.5rem;
+    font-weight: 400;
+}
+
+#mobil-uygulama .flex-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#mobil-uygulama .flex-container .picture img{
+    width: 100%;
+}

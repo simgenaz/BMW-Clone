@@ -1,0 +1,64 @@
+#navbar {
+    flex-direction: column;
+    padding-top:  0.5rem;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+    height: 100px;
+}
+
+#video{
+    position: relative;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+#rezerve .items {
+    flex-direction: column;
+}
+
+#rezerve .items .bul img{
+    width: 400px;
+}
+
+#rezerve .items .bul{
+    width: 100%;
+}
+
+#rezerve .items .bul .h3{
+    align-items: center;
+}
+
+#modeller .modeller {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+#modeller{
+    margin: 0 0 0 0;
+}
+
+
+#kesfet #photo-1 img{
+    width: 100%;
+}
+#kesfet #photo-2 img{
+    width: 100%;
+}
+#kesfet .text-info {
+    top: 50%;
+    left: 50%;
+    font-size: 1rem;
+}
+
+#kesfet .text-info button{
+    width: auto;
+    padding: 0.2rem 0.75rem;
+    font-weight: 300;
+}
+
+#mobil-uygulama .flex-container{
+    width: 100%;
+}
+#mobil-uygulama .flex-container .picture img{
+    width: 100%;
+}

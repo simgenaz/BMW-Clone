@@ -1,0 +1,30 @@
+
+#rezerve .items  .bul{
+    width: 100%;
+    
+}
+#myVideo{
+    width: 100%;
+}
+
+#modeller .modeller {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+}
+#modeller{
+    margin: 0 0 0 0;
+}
+#kesfet #photo-1 {
+    width: 100%;
+}
+#kesfet #photo-2 {
+    width: 100%;
+}
+
+
+
+
+#mobil-uygulama .flex-container{
+    width: 100%;
+}
